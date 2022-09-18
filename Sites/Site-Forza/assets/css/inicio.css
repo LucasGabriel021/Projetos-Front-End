@@ -1,0 +1,485 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Montserrat', italic;
+    font-size: 16px;
+}
+
+:root{
+    --white: #ffff;
+    --black: #000;
+    --greey: #808080;
+    --pink: #c21e8f;
+}
+
+body {
+    background-color: var(--white);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 77px;
+}
+
+.container{
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+#logomarca{
+    width: 70px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--greey);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+nav a:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+#banner{
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-text h1{
+    font-size: 70px;
+    color: var(--black);
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-text h2{
+    font-size: 22px;
+    color:var(--white);
+    width: 500px;
+    font-family:'Montserrat', sans-serif;
+    background-color: var(--pink);
+    display: inline;
+    text-align: center;
+}
+
+.banner-options{
+    height: 210px;
+    display:flex;
+}
+
+.quadrado1, .quadrado2, .quadrado3{
+    flex: 1;
+    color: var(--white);
+    padding: 20px;
+}
+
+.quadrado1{
+    background-color: var(--greey);
+}
+
+.quadrado2{
+    background-color: var(--black);
+}
+.quadrado3{
+    background-color: var(--greey);
+}
+
+.tittle-cubo{
+    font-size: 21px;
+}
+
+.description{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.banner-options a{
+    padding: 13px;
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--white);
+    display: inline-block;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.banner-options a:hover{
+    background-color: var(--white);
+    color: var(--black);
+    padding: 18px;
+}
+
+.quadrado3 .informations-days{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-bottom: 1px solid var(--pink);
+    line-height: 30px;
+}
+
+#geral{
+    justify-content: center;
+    display: flex;
+}
+
+#geral section{
+    flex: 2;
+}
+
+#geral aside{
+    flex: 1;
+}
+
+.tittle-widget{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.tittle-widget-text{
+    color: var(--black);
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.tittle-widget-traco{
+    background-color: var(--greey);
+    width: 50px;
+    height: 3px;
+    margin-top: 10px;
+}
+
+.body-widget{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cubo-widget1{
+    margin: 10px;
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.departamentos{
+    width: 140px;
+    height: 140px;
+    box-shadow: 7px -7px var(--pink);
+    transition: 0.5s;
+}
+
+.departamentos:hover{
+    width: 150px;
+    height: 150px;
+}
+
+.tittle-widget-frase{
+    margin-top: 15px;
+    border-bottom: 1px solid var(--greey);
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.icons .icons-informations{
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.icons{
+    border-bottom: 1px solid var(--greey);
+    padding-bottom: 15px;
+}
+
+article .box-news{
+    display: flex;
+}
+
+.box-news-date{
+    background-color: var(--pink);
+    padding: 10px;
+    font-size: 13px;
+    color: var(--white);
+}
+
+.box-news-comments{
+    padding: 10px;
+    margin-left: 2px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 13px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    width: 300px;
+    margin-right: 20px;
+}
+
+article .box-news-image{
+    margin-top: 30px;   
+}
+
+article .box-news-image img{
+    width: 100%;
+    height: auto;
+    opacity: 70%;
+    transition: 0.5s;
+}
+
+article .box-news-image img:hover{
+    opacity: 100%;
+    
+    height: auto;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+article .box-news-tittle{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: var(--black);
+}
+
+article .box-news-resume{
+    color: var(--greey);
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+article a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu{
+    display: flex;
+}
+
+.cubo-menu-1, .cubo-menu-2, .cubo-menu-3{
+    flex:1;
+    color: var(--white);
+    padding: 20px;
+}
+
+.cubo-menu-1{
+    background-color: var(--pink);  
+}
+
+.cubo-menu-2{
+    background-color: var(--greey);
+}
+.cubo-menu-3{
+    background-color: var(--pink);
+}
+
+.footer-area{
+    display: flex;
+    color: white;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.area-text{
+    flex: 1;
+    padding-right: 30px;
+}
+
+footer .tittle-widget-text{
+    color: var(--white);
+}
+
+.footer-copy{
+    color: var(--greey);
+    border-top: 1px solid var(--greey);
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+footer .logo img{
+    width: 200px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.line{
+    height: 3px;
+    background-color: var(--black);
+}
+
+@media(max-width:375px){
+
+    .container{
+        width: 375px;
+        flex-direction: column;
+    }
+
+    .banner-text h1{
+        font-size: 40px;
+        width: 100px;
+        margin-left: 20px; 
+    }
+
+    .banner-text h2{
+        font-size: 11px;
+        width: 270px;
+        margin-left: 20px;
+    }
+
+    .banner-options{
+        flex-direction: column;
+    }
+
+    #noticias .widget{
+        margin-top: 400px;
+        margin-left: 20px;
+    }
+
+    article .box-news-image img{
+        width: 100%;
+        height: auto;
+        opacity: 70%;
+        transition: 0.5s;
+        margin: 5px;
+    }
+
+    article .box-news-image img:hover{
+        opacity: 100%;
+        height: auto;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        margin: 10px;
+    }
+
+   aside .widget{
+       margin-top: -30px;
+       margin-left: 20px;
+       margin-bottom: 10px;
+   }
+
+   .tittle-widget-frase{
+        margin-top: 15px;
+        border-bottom: 1px solid var(--greey);
+        font-size: 16px;
+        padding-bottom: 15px;
+        width: 95%;
+   }
+
+   .icons{
+        border-bottom: 1px solid var(--greey);
+        padding-bottom: 15px;
+        width: 95%;
+   }
+
+   footer .footer-menu{
+       flex-direction: column;
+   }
+
+   footer .footer-area{
+       flex-direction: column;
+       margin-left: 20px;
+   }
+
+   header .container{
+       flex-direction: row;
+   }
+
+   nav ul{
+       flex-direction: column;
+       display: none;
+       position: absolute;
+       left: 0;
+       width: 100%;
+       background-color: var(--white);
+   }
+
+   header{
+       height: auto;
+   }
+
+   .logo{
+       padding-left: 20px;
+    }
+
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}    
