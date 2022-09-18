@@ -1,0 +1,185 @@
+/*RESET CSS*/
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root {
+     --beje: #DBD5C9;
+     --cinza: #E8E8E8;
+     --cinza-dark: #C1C1C1;
+     --cinza-dark-1: #403A3A;
+     --laranja: #F09046;
+     --verde: #48C079;
+}
+
+@keyframes pisca {
+     0%{opacity: 0.3;}
+     50%{opacity: 1;}
+     100%{opacity: 0.3;}
+}
+
+body {
+     margin: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: Arial, Helvetica, sans-serif;
+     height: 100vh;
+}
+
+#urna {
+     background-color: var(--beje);
+     padding: 30px;
+     display: flex;
+     gap: 30px;
+}
+
+.tela {
+     width: 500px;
+     height: 320px;
+     background-image: linear-gradient(to right, var(--cinza), var(--cinza-dark));
+     border: 2px solid var(--cinza-dark-1);
+     display: flex;
+     flex-direction: column;
+}
+
+.teclado {
+     background-color: var(--cinza-dark-1);
+}
+
+.teclado--linha {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.teclado--botao {
+     width: 70px;
+     height: 40px;
+     background-color: #000;
+     color: #FFF;
+     font: bold 25px Arial, Helvetica, sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 10px;
+     cursor: pointer;
+     box-shadow: 3px 3px 0px #777;
+}
+
+.botao--branco {
+     background-color: #fff;
+     color: #000;
+     font: normal 14px Arial, Helvetica, sans-serif;
+}
+
+.botao--corrige {
+     background-color: var(--laranja);
+     color: #000;
+     font: normal 14px Arial, Helvetica, sans-serif;
+}
+
+.botao--confirma {
+     background-color: var(--verde);
+     color: #000;
+     font: normal 14px Arial, Helvetica, sans-serif;
+     width: 80px;
+     height: 50px;
+}
+
+.d-1 {
+     flex: 1;
+     display: flex;
+}
+
+.d-1--left {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     padding-left: 20px;
+     gap: 10px;
+}
+
+.d-1-1 {
+     height: 50px;
+     display: flex;
+     align-items: center;
+}
+
+.d-1-2 {
+     height: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.d-1-3 {
+     height: 50px;
+}
+
+.numero {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 30px;
+     height: inherit;
+     font-size: 20px;
+     border: 2px solid #000;
+}
+
+.pisca {
+     animation-name: pisca;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+}
+
+.d-1-4 {
+     flex: 1;
+     line-height: 30px;
+}
+
+.d-1--right {
+     width: 90px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+}
+
+.d-1-image {
+     border: 1px solid #000;
+     background-color: #FFF;
+     text-align: center;
+     font-size: 14px;
+}
+
+.d-1-image img {
+     width: 100%;
+}
+
+.d-1-image.small {
+     width: 80%;
+     font-size: 12px;
+}
+
+.d-2 {
+     height: 50px;
+     font: normal 14px Arial, Helvetica, sans-serif;
+     border-top: 2px solid #000;
+     padding-left: 10px;
+}
+
+.aviso--grande {
+     font-size: 40px;
+     font-weight: bold;
+}
+
+.aviso--gigante {
+     font-size: 70px;
+     font-weight: bold;
+     flex: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}

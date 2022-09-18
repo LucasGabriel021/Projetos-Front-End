@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Closure Compiler</title>
+</head>
+<body>
+     <!--https://developers.google.com/closure/compiler/docs/api-tutorial2-->
+     <form action="https://closure-compiler.appspot.com/compile" method="POST">
+          <p>Otimizar códigos escritos em JS:</p>
+          <textarea name="js_code" cols="50" rows="5">
+          function helloWordl(name) {
+            // Greets the user
+               alert('Hello, ' + name);
+          }
+          hello('New user');
+          </textarea>
+          <input type="hidden" name="compilation_level" value="WHITESPACE_ONLY">
+          <input type="hidden" name="output_format" value="text">
+          <input type="hidden" name="output_info" value="compiled_code">
+          <br><br>
+          <input type="submit" value="Optimize">
+          </form>
+</body>
+</html>

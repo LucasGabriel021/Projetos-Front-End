@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="assets/img/favicon.ico">
+     <link rel="stylesheet" href="assets/css/reset.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <title>Calculadora | Gorjeta</title>
+</head>
+<body>
+     <main id="main">
+          <div class="main-top">
+               <div class="main-top--logomarca">
+                    <img src="assets/img/logo.svg" alt="Logomarca">
+               </div>
+          </div>
+          <div class="main-bottom">
+               <div class="main-bottom--left">
+                    <div class="main-bottom--left-box">
+                         <div class="box-titulo">Valor</div>
+                         <div class="box-input">
+                              <img src="assets/img/icon-dollar.svg" alt="Icone" class="icone-dolar">
+                              <input type="text" name="vtotal" id="vtotal" placeholder="0">
+                         </div>
+                    </div>
+                    <div class="main-bottom--left-box">
+                         <div class="box-titulo">Selecione a % de gorjeta</div>
+                         <div class="box-botoes">
+                              <div class="box-botao" onclick="calcularGorjeta('5')">5%</div>
+                              <div class="box-botao" onclick="calcularGorjeta('10')">10%</div>
+                              <div class="box-botao" onclick="calcularGorjeta('15')">15%</div>
+                              <div class="box-botao" onclick="calcularGorjeta('25')">25%</div>
+                              <div class="box-botao" onclick="calcularGorjeta('50')">50%</div>
+                              <div class="box-botao-input">
+                                   <input type="text" name="botao-input" id="botao-input" placeholder="Personalizar">
+                              </div>
+                         </div>
+                    </div>
+                    <div class="main-bottom--left-box">
+                         <div class="box-titulo">Número de pessoas<spam class="botao-erro">Quantidade invalida</spam></div>
+                         <div class="box-input">
+                              <img src="assets/img/icon-person.svg" alt="Icone" class="icone-dolar">
+                              <input type="text" name="vtotal" id="npessoas" placeholder="0">
+                         </div>
+                    </div>
+               </div>
+               <div class="main-bottom--right">
+                    <div class="main-bottom--left-valores">
+                         <div class="valor">
+                              <div class="valor-titulo">Valor da gorjeta<br><spam>/ pessoa</spam></div>
+                              <div class="valor-resultado" id="tela-gorjeta">R$: 0.00</div>
+                         </div>
+                         <div class="total">
+                              <div class="valor-titulo">Total<br><spam>/ pessoa</spam></div>
+                              <div class="valor-resultado" id="tela-total">R$: 0.00</div>
+                         </div>
+                    </div>
+                    <div class="main-bottom--left-botao">
+                         <button id="botao-redefinir" onclick="botaoRedefinir()">REDEFINIR</button>
+                    </div>
+               </div>
+          </div>
+     </main>
+     <script src="assets/js/script.js"></script>
+</body>
+</html>
