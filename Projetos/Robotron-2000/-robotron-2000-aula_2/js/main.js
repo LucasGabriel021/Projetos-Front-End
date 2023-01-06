@@ -1,3 +1,8 @@
+const controle = document.querySelectorAll("[data-controle]");
+const estatisticas = document.querySelectorAll("[data-estatistica]");
+//console.log(estatisticas);
+
+
 /**
  * Objeto de estatisticas!
  */
@@ -35,11 +40,6 @@ const pecas = {
     }
 }
 
-
-const controle = document.querySelectorAll("[data-controle]");
-const estatisticas = document.querySelectorAll("[data-estatistica]");
-//console.log(estatisticas);
-
 controle.forEach(function(item, index) {
     //console.log(item);
     item.addEventListener("click", function(e) {
@@ -48,6 +48,7 @@ controle.forEach(function(item, index) {
         //console.log(e);
         manipulaDados(e.target.dataset.controle, e.target.parentNode); // TextContent propriedade que irá obter o valor do nó
         atualizaEstatistica(e.target.dataset.peca);
+        //console.log(e.target.dataset.peca);
     })
 });
 
@@ -67,9 +68,11 @@ function manipulaDados(operacao, controle) {
 }
 
 function atualizaEstatistica(peca) {
-    console.log(peca);
-    estatisticas.forEach((item) => {
-        item.textContent = parseInt(item.textContent) + pecas[peca][item.dataset.estatisticas];
+    console.log(pecas[peca]);
+    estatisticas.forEach((item, index) => {
+        //console.log(item.dataset.estatistica);
+        //console.log(item.textContent);
+        item.textContent = parseInt(item.textContent) + pecas[peca][item.dataset.estatistica];
     });
 }
 
